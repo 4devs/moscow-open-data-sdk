@@ -17,6 +17,5 @@
         "psr-4": {
             "FDevs\\MoscowOpenData\\": ""
         }
-    },
-    "target-dir": "FDevs/MoscowOpenData"
+    }
 }

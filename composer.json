@@ -1,0 +1,22 @@
+{
+    "name": "fdevs/moscow-open-data-sdk",
+    "type": "library",
+    "description": "Moscow open data sdk: http://api.data.mos.ru",
+    "keywords": ["data.mos.ru", "moscow open data", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vmelnik-ukraine",
+            "email": "victor@4devs.org"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FDevs\\MoscowOpenData\\": ""
+        }
+    },
+    "target-dir": "FDevs/MoscowOpenData"
+}

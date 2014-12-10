@@ -4,6 +4,8 @@ namespace FDevs\MoscowOpenData\Model;
 
 class DataTypeEntry
 {
+    use GenericPropertiesTrait;
+
     /**
      * @var string
      */
@@ -13,30 +15,6 @@ class DataTypeEntry
      * @var int
      */
     private $number;
-
-    /**
-     * @var array
-     */
-    private $genericProperties = [];
-
-    /**
-     * @param array $genericProperties
-     * @return self
-     */
-    public function setGenericProperties($genericProperties)
-    {
-        $this->genericProperties = $genericProperties;
-
-        return $this;
-    }
-
-    /**
-     * @return array
-     */
-    public function getGenericProperties()
-    {
-        return $this->genericProperties;
-    }
 
     /**
      * @param string $id

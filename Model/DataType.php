@@ -4,6 +4,8 @@ namespace FDevs\MoscowOpenData\Model;
 
 class DataType
 {
+    use GenericPropertiesTrait;
+
     /**
      * Unique identifier
      *
@@ -51,11 +53,6 @@ class DataType
      * @var bool
      */
     private $hasGeodata;
-
-    /**
-     * @var array|GenericProperty[]
-     */
-    private $genericProperties = [];
 
     /**
      * @param string $caption
@@ -188,25 +185,6 @@ class DataType
     public function getDescription()
     {
         return $this->description;
-    }
-
-    /**
-     * @param array|GenericProperty[] $genericProperties
-     * @return self
-     */
-    public function setGenericProperties($genericProperties)
-    {
-        $this->genericProperties = $genericProperties;
-
-        return $this;
-    }
-
-    /**
-     * @return array|GenericProperty[]
-     */
-    public function getGenericProperties()
-    {
-        return $this->genericProperties;
     }
 
     /**
